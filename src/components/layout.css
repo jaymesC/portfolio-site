@@ -1,3 +1,4 @@
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -7,6 +8,8 @@ html {
 }
 body {
   margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -590,8 +593,12 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+/* 
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
-}
+} */

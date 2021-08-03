@@ -8,8 +8,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
+import { FaLinkedinIn } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
+import { FaTwitter } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 
-import Header from "./header"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -23,28 +28,75 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const StyledDiv = styled.div`
+    margin-left: 4rem;
+    margin-right: 5rem;
+
+    @media (max-width: 768px) {
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+  `
+
+  const Footer = styled.footer`
+  display: flex;
+  margin-top: 15%;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  `
+
+  const StyledFooterText = styled.p`
+  font-size: 0.8rem;
+  
+  @media (max-width: 768px) {
+    font-size: 0.6rem;
+    margin-top: 0rem;
+    
+   }
+  `
+
+
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <StyledDiv>
+      <main>{children}</main>
+      <Footer>
+        <section>
+          {" "}
+          <a href="https://github.com/jaymesC">
+            <FaGithub
+              style={{
+                marginRight: "2.5rem",
+                color: "black",
+                fontSize: "30px",
+              }}
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/james-clement-8a9a44184/web">
+            <FaLinkedinIn
+              style={{
+                marginRight: "2.5rem",
+                color: "black",
+                fontSize: "30px",
+              }}
+            />
+          </a>{" "}
+          <a href="https://twitter.com/JaymesJnr?s=09">
+            <FaTwitter
+              style={{
+                marginRight: "2.5rem",
+                color: "black",
+                fontSize: "30px",
+              }}
+            />
+          </a>{" "}
+          <a href="https://www.instagram.com/jaymes_jnr/">
+            <FaInstagram style={{ color: "black", fontSize: "30px" }} />
+          </a>{" "}
+        </section>
+        <StyledFooterText>COPYRIGHT © {new Date().getFullYear()} CLEMENT JAMES JNR</StyledFooterText>
+      </Footer>
+    </StyledDiv>
   )
 }
 
