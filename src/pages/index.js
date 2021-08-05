@@ -28,6 +28,7 @@ const StyledP = styled(motion.p)`
 `
 
 const StyledContainer = styled.div`
+  font-family: "Philosopher", sans-serif;
   display: flex;
   justify-content: space-between;
   margin-left: 6.3rem;
@@ -39,13 +40,13 @@ const StyledContainer = styled.div`
 
 const StyledButton = styled(motion.button)`
   /* display: flex; */
-  border: 2px solid red;
-  background-color: #000;
+  border: 2px solid #313131;
+  background-color: #313131;
   color: white;
   cursor: pointer;
   border-radius: 5rem;
   margin-left: 9rem;
-  padding: 8px 8px;
+  padding: 12px 12px;
   /* transition: 0.7s;
   & :hover {
     color: white;
@@ -114,15 +115,17 @@ const IndexPage = () => (
             Front end developer who writes optimized, efficient and readable
             code. <br /> Focused on crafting clean & user‑friendly experiences.
           </StyledP>
-          <StyledButton
-            variants={buttonVariants}
-            whileHover="hover"
-            initial={{  opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.0, delay:1.8 }}
-          >
-            loremmmm
-          </StyledButton>
+          <Link to="/project">
+            <StyledButton
+              variants={buttonVariants}
+              whileHover="hover"
+              initial={{ opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1.0, delay: 1.8 }}
+            >
+              View my work
+            </StyledButton>
+          </Link>
         </StyledSection>
 
         <TestImage

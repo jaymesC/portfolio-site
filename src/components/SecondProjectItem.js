@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+import { FaCss3, FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
 
 const StyledDiv = styled.div`
   margin-top: 4rem;
@@ -19,6 +20,7 @@ const StyledDiv = styled.div`
 `
 
 const StyledSection = styled.section`
+  font-family: "Philosopher", sans-serif;
   display: flex;
   border: 2px solid #313131;
   margin-right: 20rem;
@@ -52,7 +54,7 @@ const StyledNotes = styled.section`
 `
 
 const StyledP = styled.p`
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   @media screen and (max-width: 568px) {
     margin-top: 1rem;
     font-size: 0.8rem;
@@ -63,6 +65,10 @@ const StyledP = styled.p`
     font-size: 0.9rem;
   }
 `
+const StyledIcons = styled.div`
+display: flex;
+justify-content: space-between;
+`
 
 const SecondProjectItem = () => {
   return (
@@ -70,7 +76,7 @@ const SecondProjectItem = () => {
       <StyledSection>
         <StyledImage>
           <StaticImage
-            src="../images/mackbook1.png"
+            src="../images/Project 3.jpg"
             // width={300}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
@@ -82,7 +88,13 @@ const SecondProjectItem = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Accusantium, dolor.
           </StyledP>
-          💻 🎈🖥
+          <StyledIcons>
+            <div>
+              {" "}
+              <strong>Tech Stack:</strong> <FaReact /> <FaHtml5/> <FaCss3Alt/>
+            </div>
+            <div><FaGlobe/> <FaGithub/></div>
+          </StyledIcons>
         </StyledNotes>
       </StyledSection>
     </StyledDiv>

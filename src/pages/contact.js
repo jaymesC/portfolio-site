@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar"
 import { FaEnvelope, FaLinkedinIn, FaPhoneAlt, FaTwitter } from "react-icons/fa"
 
 const StyledContainer = styled.div`
+  font-family: "Philosopher", sans-serif;
   margin-left: 6rem;
   margin-top: 2rem;
   @media screen and (max-width: 568px) {
