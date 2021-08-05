@@ -45,12 +45,12 @@ const StyledButton = styled(motion.button)`
   cursor: pointer;
   border-radius: 5rem;
   margin-left: 9rem;
-  padding: 5px 8px;
-  transition: 0.7s;
+  padding: 8px 8px;
+  /* transition: 0.7s;
   & :hover {
     color: white;
     background-color: red;
-  }
+  } */
 
   @media (max-width: 768px) {
     margin-left: 4rem;
@@ -72,6 +72,24 @@ const TestImage = styled(motion.div)`
 const StyledSection = styled.section`
 /* display: flex; */
 `
+
+const buttonVariants = {
+  visible: {
+    initial: { x: -250, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    transition: { delay: 1.5, duration: 1.5 },
+  },
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 8px blue",
+    boxShadow: "0px 0px 8px red",
+    transition: {
+      // delay: 1.5,
+      // duration: 1.5,
+      yoyo: Infinity,
+    },
+  },
+}
 
 const IndexPage = () => (
   <>
@@ -97,9 +115,11 @@ const IndexPage = () => (
             code. <br /> Focused on crafting clean & user‑friendly experiences.
           </StyledP>
           <StyledButton
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1.5 }}
+            variants={buttonVariants}
+            whileHover="hover"
+            initial={{  opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.0, delay:1.8 }}
           >
             loremmmm
           </StyledButton>
@@ -108,7 +128,7 @@ const IndexPage = () => (
         <TestImage
           initial={{ x: 250, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1, duration: 1, type: 'spring', stiffness: 120 }}
+          transition={{ delay: 1, duration: 1, type: "spring", stiffness: 120 }}
         >
           <StaticImage
             layout="constrained"

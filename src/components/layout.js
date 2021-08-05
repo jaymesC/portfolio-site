@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
 
   const Footer = styled.footer`
   display: flex;
-  margin-top: 15%;
+  margin-top: 16%;
   justify-content: center;
   flex-direction: column;
   text-align: center;

@@ -9,7 +9,7 @@ const Navigation = styled.nav`
   display: flex;
   background-color: #000;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
@@ -19,7 +19,7 @@ const Navigation = styled.nav`
   font-family: tahoma;
   
   @media (max-width: 768px) {
-    justify-content: space-between;
+    /* justify-content: center; */
     position: sticky;
     height: 8vh;
     top: 0;
@@ -41,9 +41,11 @@ const Toggle = styled.div`
 `
 const Img = styled.section`
   padding-top: 20px;
-  margin-right: 24rem;
+  /* margin-right: 24rem; */
+  margin-left: 6.3rem;
 
   @media (max-width: 768px) {
+    margin-left: 0;
     padding-top: 12px;
     padding-left: 10px;
     margin-right: 0rem;
@@ -55,6 +57,7 @@ const Navbox = styled.div`
   height: 100%;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 6.3rem;
   
   @media (max-width: 768px) {
     flex-direction: column;
@@ -63,6 +66,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
+    margin-right: 0;
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
