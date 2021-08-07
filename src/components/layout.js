@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
+import { motion } from "framer-motion"
 import { FaLinkedinIn } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
     }
   `
 
-  const Footer = styled.footer`
+  const Footer = styled(motion.footer)`
   display: flex;
   margin-top: 16%;
   justify-content: center;
@@ -60,10 +61,14 @@ const Layout = ({ children }) => {
   return (
     <StyledDiv>
       <main>{children}</main>
-      <Footer>
+      <Footer
+        initial={{ opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.0, delay: 2.3 }}
+      >
         <section>
           {" "}
-          <a href="https://github.com/jaymesC">
+          <a href="https://github.com/jaymesC" target="_blank" rel="noreferrer">
             <FaGithub
               style={{
                 marginRight: "2.5rem",
@@ -72,7 +77,11 @@ const Layout = ({ children }) => {
               }}
             />
           </a>
-          <a href="https://www.linkedin.com/in/james-clement-8a9a44184/web">
+          <a
+            href="https://www.linkedin.com/in/james-clement-8a9a44184/web"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn
               style={{
                 marginRight: "2.5rem",
@@ -81,7 +90,11 @@ const Layout = ({ children }) => {
               }}
             />
           </a>{" "}
-          <a href="https://twitter.com/JaymesJnr?s=09">
+          <a
+            href="https://twitter.com/JaymesJnr?s=09"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaTwitter
               style={{
                 marginRight: "2.5rem",
@@ -90,11 +103,17 @@ const Layout = ({ children }) => {
               }}
             />
           </a>{" "}
-          <a href="https://www.instagram.com/jaymes_jnr/">
+          <a
+            href="https://www.instagram.com/jaymes_jnr/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaInstagram style={{ color: "black", fontSize: "30px" }} />
           </a>{" "}
         </section>
-        <StyledFooterText>COPYRIGHT © {new Date().getFullYear()} CLEMENT JAMES JNR</StyledFooterText>
+        <StyledFooterText>
+          COPYRIGHT © {new Date().getFullYear()} CLEMENT JAMES JNR
+        </StyledFooterText>
       </Footer>
     </StyledDiv>
   )

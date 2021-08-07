@@ -4,10 +4,11 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { motion } from "framer-motion"
 import Navbar from "../components/Navbar"
 import { FaEnvelope, FaLinkedinIn, FaPhoneAlt, FaTwitter } from "react-icons/fa"
 
-const StyledContainer = styled.div`
+const StyledContainer = styled(motion.div)`
   font-family: "Philosopher", sans-serif;
   margin-left: 6rem;
   margin-top: 2rem;
@@ -116,7 +117,11 @@ const Contact = () => (
     <Navbar />
     <Layout>
       <Seo title="Contact" />
-      <StyledContainer>
+      <StyledContainer
+        initial={{ y: 250, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+      >
         <StyledH1>Get In touch!</StyledH1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quo
@@ -147,7 +152,9 @@ const Contact = () => (
           </StyledFormSection>
         </StyledForm>
       </StyledContainer>
-      <StyledLink><Link to="/">Go Back</Link></StyledLink>
+      <StyledLink>
+        <Link to="/">Go Back</Link>
+      </StyledLink>
     </Layout>
   </>
 )

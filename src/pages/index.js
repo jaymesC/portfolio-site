@@ -8,7 +8,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Navbar from "../components/Navbar"
 
-import { FaLongArrowAltRight } from "react-icons/fa"
 
 const StyledH1 = styled(motion.h1)`
   margin-top: 5rem;
@@ -19,7 +18,7 @@ const StyledH1 = styled(motion.h1)`
   }
   `
 const StyledP = styled(motion.p)`
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   @media (max-width: 768px) {
     margin-top: -1.1rem;
@@ -61,7 +60,7 @@ const StyledButton = styled(motion.button)`
 
 const TestImage = styled(motion.div)`
   display: block;
-  margin-right: 6rem;
+  margin-right: 5rem;
   margin-top: 4rem;
 
   @media (max-width: 768px) {
@@ -131,7 +130,7 @@ const IndexPage = () => (
         <TestImage
           initial={{ x: 250, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1, duration: 1, type: "spring", stiffness: 120 }}
+          transition={{ delay: 1.5, duration: 1.4, type: "spring", stiffness: 120 }}
         >
           <StaticImage
             layout="constrained"

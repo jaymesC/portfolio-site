@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { motion } from "framer-motion"
 import NavbarLinks from "./NavbarLinks"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -39,8 +40,8 @@ const Toggle = styled.div`
     display: flex;
   }
 `
-const Img = styled.section`
-  padding-top: 20px;
+const Img = styled(motion.section)`
+  padding-top: 18px;
   /* margin-right: 24rem; */
   margin-left: 6.3rem;
 
@@ -49,15 +50,16 @@ const Img = styled.section`
     padding-top: 12px;
     padding-left: 10px;
     margin-right: 0rem;
+    width: 50px;
   }
 `
 
-const Navbox = styled.div`
+const Navbox = styled(motion.div)`
   display: flex;
   height: 100%;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 6.3rem;
+  margin-right: 5.3rem;
   
   @media (max-width: 768px) {
     flex-direction: column;
@@ -109,12 +111,16 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      <Img>
+      <Img
+        initial={{ y: -250, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2, duration: 1 }}
+      >
         <Link to="/">
           <StaticImage
             layout="constrained"
-            src="../images/logo.JPG"
-            // width={300}
+            src="../images/CJ.png"
+            width={65}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
           />
@@ -127,7 +133,11 @@ const Navbar = () => {
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </Toggle>
       {navbarOpen ? (
-        <Navbox>
+        <Navbox
+          initial={{ y: -250, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+        >
           <NavbarLinks />
         </Navbox>
       ) : (
