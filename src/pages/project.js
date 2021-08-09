@@ -60,7 +60,7 @@ const SecondPage = () => (
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.0, delay: 2 }}
       >
-        Check out what I've worked on in the past...
+        Here are some of my works
       </StyledDescription>
       <ProjectItem />
       <SecondProjectItem />

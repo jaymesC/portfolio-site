@@ -45,7 +45,7 @@ const StyledSection = styled.section`
 
 const StyledImage = styled.div`
   margin-left: 3px;
-  margin-right: 2rem;
+  margin-right: 1rem;
   @media screen and (max-width: 568px) {
     margin: 1rem 1rem;
   }
@@ -101,8 +101,8 @@ const ProjectItem = () => {
       <StyledSection>
         <StyledImage>
           <StaticImage
-            src="../images/Project 3.jpg"
-            width={200}
+            src="../images/portfolio.jpg"
+            width={250}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"
@@ -110,8 +110,8 @@ const ProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium, dolor.
+            The website you're looking at right now. Showcases my skills and
+            what I'm up to.
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -130,15 +130,31 @@ const ProjectItem = () => {
                 />{" "}
                 <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
                 <SiStyledComponents
-                  style={{ marginRight: "5px",paddingTop: "5px", fontSize: "30px" }}
+                  style={{ marginRight: "6px", fontSize: "20px" }}
                 />
                 <SiJavascript />
                 {/* <SiStyledComponents /> */}
               </section>
             </StyledStack>
             <StyledLinks>
-              <FaGlobe style={{ marginRight: "12px", fontSize: "20px" }} />{" "}
-              <FaGithub style={{ marginRight: "5px", fontSize: "20px" }} />
+              <a href="https://jaymesjay.netlify.app/">
+                <FaGlobe
+                  style={{
+                    marginRight: "12px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>{" "}
+              <a href="https://github.com/jaymesC/portfolio-site/tree/master">
+                <FaGithub
+                  style={{
+                    marginRight: "5px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>
             </StyledLinks>
           </StyledIcons>
         </StyledNotes>

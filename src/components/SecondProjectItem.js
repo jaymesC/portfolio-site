@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
+import { SiJavascript } from "react-icons/si"
 
 const StyledDiv = styled(motion.div)`
   margin-top: 4rem;
@@ -44,14 +45,14 @@ const StyledSection = styled.section`
 
 const StyledImage = styled.div`
   margin-left: 3px;
-  margin-right: 2rem;
+  margin-right: 1rem;
   @media screen and (max-width: 568px) {
     margin: 1rem 1rem;
   }
 `
 
 const StyledNotes = styled.section`
-margin-top: 0.6rem;
+  margin-top: 0.6rem;
   /* margin-left: 5px; */
 `
 
@@ -100,8 +101,8 @@ const SecondProjectItem = () => {
       <StyledSection>
         <StyledImage>
           <StaticImage
-            src="../images/Project 3.jpg"
-            width={200}
+            src="../images/mackbookNew.jpg"
+            width={300}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"
@@ -109,8 +110,8 @@ const SecondProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium, dolor.
+            Gastrown offers product development of web service Information and
+            digital solutions for brands.
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -129,11 +130,28 @@ const SecondProjectItem = () => {
                 />{" "}
                 <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
                 <FaCss3Alt style={{ marginRight: "5px", fontSize: "20px" }} />
+                <SiJavascript />
               </section>
             </StyledStack>
             <StyledLinks>
-              <FaGlobe style={{ marginRight: "12px", fontSize: "20px" }} />{" "}
-              <FaGithub style={{ marginRight: "5px", fontSize: "20px" }} />
+              <a href="https://gastrown.com">
+                <FaGlobe
+                  style={{
+                    marginRight: "12px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>{" "}
+              <a href="https://github.com/jaymesC/gastrown-website/tree/master">
+                <FaGithub
+                  style={{
+                    marginRight: "5px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>
             </StyledLinks>
           </StyledIcons>
         </StyledNotes>
@@ -143,5 +161,3 @@ const SecondProjectItem = () => {
 }
 
 export default SecondProjectItem
-
-

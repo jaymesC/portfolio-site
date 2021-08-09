@@ -78,7 +78,7 @@ const Layout = ({ children }) => {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/james-clement-8a9a44184/web"
+            href="https://linkedin.com/in/jamesclementjnr"
             target="_blank"
             rel="noreferrer"
           >

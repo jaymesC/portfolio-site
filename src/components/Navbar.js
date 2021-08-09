@@ -47,7 +47,7 @@ const Img = styled(motion.section)`
 
   @media (max-width: 768px) {
     margin-left: 0;
-    padding-top: 12px;
+    padding-top: 15px;
     padding-left: 10px;
     margin-right: 0rem;
     width: 50px;
@@ -136,7 +136,7 @@ const Navbar = () => {
         <Navbox
           initial={{ y: -250, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
+          transition={{ delay: 0.1, duration: 1 }}
         >
           <NavbarLinks />
         </Navbox>

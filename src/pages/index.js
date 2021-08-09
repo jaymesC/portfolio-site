@@ -15,6 +15,7 @@ const StyledH1 = styled(motion.h1)`
   font-family: tahoma;
   @media (max-width: 768px) {
     font-size: 1.5rem;
+    margin-top: 2rem;
   }
   `
 const StyledP = styled(motion.p)`
@@ -65,7 +66,7 @@ const TestImage = styled(motion.div)`
 
   @media (max-width: 768px) {
     margin-right: 0rem;
-    /* display: none; */
+    margin-left: 0.9rem;
   }
 `
 

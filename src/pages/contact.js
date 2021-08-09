@@ -105,10 +105,16 @@ const StyledButton = styled.button`
   }
 `
 
-const StyledLink = styled.p`
+const StyledLink = styled(motion.p)`
 text-decoration: none;
 font-family: tahoma;
 color: black;
+`
+
+const StyledA = styled.a`
+  text-decoration: none;
+  font-family: tahoma;
+  color: black;
 `
 
 
@@ -124,24 +130,43 @@ const Contact = () => (
       >
         <StyledH1>Get In touch!</StyledH1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quo
-          deleniti cumque dicta.
+          Do you want to say hi to me or you've got a project in mind, why not
+          get in touch. <br /> Let's work together. Feel free to contact me
         </p>
         <StyledForm>
           <StyledDetails>
             <p>
-              <FaEnvelope style={{ marginRight: "8px" }} /> ******@*****.***
+              <FaEnvelope style={{ marginRight: "8px" }} />
+              <StyledA href="mailto: clementjaymes@gmail.com">
+                {" "}
+                ******@*****.***{" "}
+              </StyledA>
             </p>
             <p>
-              <FaPhoneAlt style={{ marginRight: "8px" }} /> +234**********
+              <FaPhoneAlt style={{ marginRight: "8px" }} />
+              <StyledA> +234**********</StyledA>
             </p>
             <p>
-              <FaTwitter style={{ marginRight: "8px" }} /> Lorem ipsum dolor
-              sit.
+              <FaTwitter style={{ marginRight: "8px" }} />{" "}
+              <StyledA
+                href="https://twitter.com/JaymesJnr?s=09"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                twitter.com/JaymesJnr
+              </StyledA>
             </p>
             <p>
-              <FaLinkedinIn style={{ marginRight: "8px" }} /> Lorem ipsum dolor
-              sit.
+              <FaLinkedinIn style={{ marginRight: "8px" }} />{" "}
+              <StyledA
+                href="https://linkedin.com/in/jamesclementjnr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                linkedin.com/in/jamesclementjnr
+              </StyledA>
             </p>
           </StyledDetails>
           <StyledFormSection>
@@ -152,7 +177,11 @@ const Contact = () => (
           </StyledFormSection>
         </StyledForm>
       </StyledContainer>
-      <StyledLink>
+      <StyledLink
+        initial={{ opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.0, delay: 2.3 }}
+      >
         <Link to="/">Go Back</Link>
       </StyledLink>
     </Layout>

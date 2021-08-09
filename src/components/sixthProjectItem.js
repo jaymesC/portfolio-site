@@ -1,7 +1,8 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
+import { FaBootstrap, FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
+import { SiJavascript } from "react-icons/si"
 
 const StyledDiv = styled.div`
   margin-top: 4rem;
@@ -24,7 +25,7 @@ const StyledSection = styled.section`
   display: flex;
   border: 2px solid #ddbbff;
   margin-right: 20rem;
-  box-shadow: 1px 25px 18px #ddbbff;
+  box-shadow: 1px 25px 18px #ddd9d9;
   border-radius: 10px;
   @media (max-width: 768px) {
     margin-right: 0rem;
@@ -43,7 +44,7 @@ const StyledSection = styled.section`
 
 const StyledImage = styled.div`
   margin-left: 3px;
-  margin-right: 2rem;
+  margin-right: 1rem;
   @media screen and (max-width: 568px) {
     margin: 1rem 1rem;
   }
@@ -95,8 +96,8 @@ const SixthProjectItem = () => {
       <StyledSection>
         <StyledImage>
           <StaticImage
-            src="../images/Project 3.jpg"
-            width={200}
+            src="../images/manager.jpg"
+            width={250}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"
@@ -104,8 +105,7 @@ const SixthProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium, dolor.
+            A contact Manager application to help manage your contacts (Credit: Traversy Media)
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -124,11 +124,29 @@ const SixthProjectItem = () => {
                 />{" "}
                 <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
                 <FaCss3Alt style={{ marginRight: "5px", fontSize: "20px" }} />
+                <SiJavascript />
+                <FaBootstrap />
               </section>
             </StyledStack>
             <StyledLinks>
-              <FaGlobe style={{ marginRight: "12px", fontSize: "20px" }} />{" "}
-              <FaGithub style={{ marginRight: "5px", fontSize: "20px" }} />
+              <a href="https://contactlistmanagerapp.netlify.app/">
+                <FaGlobe
+                  style={{
+                    marginRight: "12px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>{" "}
+              <a href="https://github.com/jaymesC/contact-manager-application">
+                <FaGithub
+                  style={{
+                    marginRight: "5px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>
             </StyledLinks>
           </StyledIcons>
         </StyledNotes>

@@ -2,6 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
+import { SiJavascript } from "react-icons/si"
 
 const StyledDiv = styled.div`
   margin-top: 4rem;
@@ -43,7 +44,7 @@ const StyledSection = styled.section`
 
 const StyledImage = styled.div`
   margin-left: 3px;
-  margin-right: 2rem;
+  margin-right: 1rem;
   @media screen and (max-width: 568px) {
     margin: 1rem 1rem;
   }
@@ -95,8 +96,8 @@ const ThirdProjectItem = () => {
       <StyledSection>
         <StyledImage>
           <StaticImage
-            src="../images/Project 3.jpg"
-            width={200}
+            src="../images/pro3.jpg"
+            width={250}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"
@@ -104,8 +105,7 @@ const ThirdProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium, dolor.
+            A clone from the amazon website with login and backend functionality.
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -124,11 +124,28 @@ const ThirdProjectItem = () => {
                 />{" "}
                 <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
                 <FaCss3Alt style={{ marginRight: "5px", fontSize: "20px" }} />
+                <SiJavascript />
               </section>
             </StyledStack>
             <StyledLinks>
-              <FaGlobe style={{ marginRight: "12px", fontSize: "20px" }} />{" "}
-              <FaGithub style={{ marginRight: "5px", fontSize: "20px" }} />
+              <a href="https://clone-c5acd.web.app/">
+                <FaGlobe
+                  style={{
+                    marginRight: "12px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>{" "}
+              <a href="https://github.com/jaymesC/amamzon-clone">
+                <FaGithub
+                  style={{
+                    marginRight: "5px",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
+                />
+              </a>
             </StyledLinks>
           </StyledIcons>
         </StyledNotes>
