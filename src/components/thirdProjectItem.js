@@ -97,7 +97,7 @@ const ThirdProjectItem = () => {
         <StyledImage>
           <StaticImage
             src="../images/pro3.jpg"
-            width={250}
+            width={230}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"

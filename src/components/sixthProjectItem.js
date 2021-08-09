@@ -97,7 +97,7 @@ const SixthProjectItem = () => {
         <StyledImage>
           <StaticImage
             src="../images/manager.jpg"
-            width={250}
+            width={300}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"

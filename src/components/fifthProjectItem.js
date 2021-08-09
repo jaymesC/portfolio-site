@@ -97,7 +97,7 @@ const FifthProjectItem = () => {
         <StyledImage>
           <StaticImage
             src="../images/upscale.jpg"
-            width={250}
+            width={300}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"
@@ -105,7 +105,7 @@ const FifthProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            Upscale Advisory is a firm that provide businesses with high quality consultancy an advisory services
+            Upscale Advisory is a firm that provide businesses with high quality consultancy and advisory services
           </StyledP>
           <StyledIcons>
             <StyledStack>

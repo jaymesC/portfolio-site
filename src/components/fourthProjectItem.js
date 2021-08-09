@@ -97,7 +97,7 @@ const FourthProjectItem = () => {
         <StyledImage>
           <StaticImage
             src="../images/Project 5.jpg"
-            width={250}
+            width={310}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"
@@ -105,8 +105,8 @@ const FourthProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            MSL is a multi-dimensional servicing company, providing services
-            in the various areas construction
+            MSL is a multi-dimensional servicing company, providing services in
+            various areas of construction
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -131,7 +131,7 @@ const FourthProjectItem = () => {
                   }}
                 />
               </a>{" "}
-              <a href="https://github.com/jaymesC/amamzon-clone">
+              <a href="https://github.com/jaymesC/MSL-site">
                 <FaGithub
                   style={{
                     marginRight: "5px",

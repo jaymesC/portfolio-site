@@ -67,7 +67,7 @@ const SecondPage = () => (
       <ThirdProjectItem />
       <FourthProjectItem />
       <FifthProjectItem />
-      <SixthProjectItem />
+      {/* <SixthProjectItem /> */}
 
       <StyledBack>
         <Link to="/">Go back </Link>
