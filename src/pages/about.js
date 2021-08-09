@@ -13,16 +13,32 @@ const StyledDiv = styled(motion.div)`
   margin-left: 6rem;
   display: flex;
   font-family: "Philosopher", sans-serif;
+  @media screen and (max-width: 568px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction:column;
+    
+  }
 `
 
 const StyledH1 = styled.h1`
   font-family: "Philosopher", sans-serif;
   margin-top: 2rem;
   font-size: 4rem;
+  
+  @media screen and (max-width: 568px) {
+    font-size: 2rem;
+
+  }
 `
 const StyledImage = styled.section`
   margin-top: 1.7rem;
   margin-left: -3rem;
+  
+  @media screen and (max-width: 568px) {
+    margin-left: 0.8rem;
+    
+  }
 `
 const StyledButton = styled(motion.button)`
   /* display: flex; */
@@ -94,7 +110,7 @@ const About = () => (
           <p>
             Since then, I've gathered knowledge that has helped to propel my
             career. I am also a Christian.
-            <br /> I primarily program in JavaScript and Python but have plans
+            <br /> I primarily program in JavaScript but have plans
             to dive deeper to expand my skills.
           </p>
           <Link to="/project">
@@ -106,9 +122,9 @@ const About = () => (
         <StyledImage>
           <StaticImage
             layout="constrained"
-            src="../images/pic.JPG"
+            src="../images/aboutpic.jpg"
             width={300}
-            height={270}
+            height={260}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="A Gatsby astronaut"

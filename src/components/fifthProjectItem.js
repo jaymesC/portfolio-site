@@ -108,7 +108,8 @@ const FifthProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            Upscale Advisory is a firm that provide businesses with high quality consultancy and advisory services
+            Upscale Advisory is a firm that provide businesses with high quality
+            consultancy and advisory services
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -127,8 +128,8 @@ const FifthProjectItem = () => {
                 />{" "}
                 <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
                 <FaCss3Alt style={{ marginRight: "5px", fontSize: "20px" }} />
+                <FaBootstrap style={{ marginRight: "5px", fontSize: "20px" }} />
                 <SiJavascript />
-                <FaBootstrap />
               </section>
             </StyledStack>
             <StyledLinks>
