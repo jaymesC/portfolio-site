@@ -27,6 +27,9 @@ const StyledSection = styled.section`
   margin-right: 20rem;
   box-shadow: 1px 25px 18px #ddd9d9;
   border-radius: 10px;
+  & :hover {
+    box-shadow: 1px 9px 9px #b2beb5;
+  }
   @media (max-width: 768px) {
     margin-right: 0rem;
   }
@@ -97,7 +100,7 @@ const FifthProjectItem = () => {
         <StyledImage>
           <StaticImage
             src="../images/upscale.jpg"
-            width={300}
+            width={310}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Project visuals"

@@ -11,7 +11,7 @@ import SecondProjectItem from "../components/SecondProjectItem"
 import ThirdProjectItem from "../components/thirdProjectItem"
 import FourthProjectItem from "../components/FourthProjectItem"
 import FifthProjectItem from "../components/FifthProjectItem"
-import SixthProjectItem from "../components/SixthProjectItem"
+
 
 
 const StyledH1 = styled(motion.h1)`

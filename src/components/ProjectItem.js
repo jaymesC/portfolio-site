@@ -8,7 +8,8 @@ import { SiJava, SiJavascript, SiStyledComponents } from "react-icons/si"
 const StyledDiv = styled(motion.div)`
   margin-top: 4rem;
   margin-left: 7rem;
-  @media screen and (max-width: 568px) {
+  
+   @media screen and (max-width: 568px) {
     margin-top: 2rem;
     margin-left: 0rem;
   }
@@ -28,6 +29,9 @@ const StyledSection = styled.section`
   margin-right: 20rem;
   box-shadow: 1px 25px 18px #ddd9d9;
   border-radius: 10px;
+  & :hover {
+    box-shadow: 1px 9px 9px #b2beb5;
+  }
   @media (max-width: 768px) {
     margin-right: 0rem;
   }
