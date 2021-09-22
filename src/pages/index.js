@@ -13,6 +13,7 @@ const StyledH1 = styled(motion.h1)`
   margin-top: 5rem;
   font-size: 3rem;
   font-family: tahoma;
+  color:#000;
   @media (max-width: 768px) {
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -41,7 +42,7 @@ const StyledContainer = styled.div`
 const StyledButton = styled(motion.button)`
   /* display: flex; */
   border: 2px solid #313131;
-  background-color: #313131;
+  background-color: #000;
   color: white;
   cursor: pointer;
   border-radius: 5rem;
@@ -61,12 +62,12 @@ const StyledButton = styled(motion.button)`
 
 const TestImage = styled(motion.div)`
   display: block;
-  margin-right: 5rem;
+  margin-right: 4rem;
   margin-top: 4rem;
 
   @media (max-width: 768px) {
     margin-right: 0rem;
-    margin-left: 0.9rem;
+    margin-left: 0rem;
   }
 `
 
@@ -94,7 +95,6 @@ const buttonVariants = {
 
 const IndexPage = () => (
   <>
-    <Navbar />
     <Layout>
       <Seo title="Official" />
       <StyledContainer>
@@ -134,13 +134,13 @@ const IndexPage = () => (
           transition={{ delay: 1.5, duration: 1.4, type: "spring", stiffness: 120 }}
         >
           <StaticImage
-            layout="constrained"
-            src="../images/pic.JPG"
-            // width={300}
+            // layout="constrained"
+            src="../images/codelogo.png"
+            width={300}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="A Gatsby astronaut"
-            style={{ borderRadius: `50%` }}
+            // style={{ borderRadius: `50%` }}
           />
         </TestImage>
       </StyledContainer>

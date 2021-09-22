@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Navbar from "../components/Navbar"
+
 import ProjectItem from "../components/ProjectItem"
 import SecondProjectItem from "../components/SecondProjectItem"
 import ThirdProjectItem from "../components/thirdProjectItem"
@@ -44,8 +44,6 @@ margin-top: 3rem;
 `
 
 const SecondPage = () => (
-  <>
-    <Navbar />
     <Layout>
       <Seo title="Project" />
       <StyledH1
@@ -73,7 +71,6 @@ const SecondPage = () => (
         <Link to="/">Go back </Link>
       </StyledBack>
     </Layout>
-  </>
 )
 
 export default SecondPage

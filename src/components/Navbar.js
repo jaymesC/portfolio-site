@@ -18,7 +18,7 @@ const Navigation = styled.nav`
   z-index: 2;
   align-self: center;
   font-family: tahoma;
-  
+
   @media (max-width: 768px) {
     /* justify-content: center; */
     position: sticky;
@@ -42,7 +42,6 @@ const Toggle = styled.div`
 `
 const Img = styled(motion.section)`
   padding-top: 18px;
-  /* margin-right: 24rem; */
   margin-left: 6.3rem;
 
   @media (max-width: 768px) {
@@ -60,7 +59,7 @@ const Navbox = styled(motion.div)`
   justify-content: flex-end;
   align-items: center;
   margin-right: 5.3rem;
-  
+
   @media (max-width: 768px) {
     flex-direction: column;
     background-color: #000;
@@ -111,11 +110,7 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      <Img
-        initial={{ y: -250, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.2, duration: 1 }}
-      >
+      <Img>
         <Link to="/">
           <StaticImage
             layout="constrained"
@@ -149,4 +144,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default Navbar

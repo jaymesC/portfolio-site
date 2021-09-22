@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -14,6 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
+import Navbar from '../components/Navbar'
 
 
 import "./layout.css"
@@ -59,6 +53,8 @@ const Layout = ({ children }) => {
 
 
   return (
+    <>
+      <Navbar />
     <StyledDiv>
       <main>{children}</main>
       <Footer
@@ -115,7 +111,8 @@ const Layout = ({ children }) => {
           COPYRIGHT © {new Date().getFullYear()} CLEMENT JAMES JNR
         </StyledFooterText>
       </Footer>
-    </StyledDiv>
+      </StyledDiv>
+      </>
   )
 }
 

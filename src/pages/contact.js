@@ -5,7 +5,6 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { motion } from "framer-motion"
-import Navbar from "../components/Navbar"
 import { FaEnvelope, FaLinkedinIn, FaPhoneAlt, FaTwitter } from "react-icons/fa"
 
 const StyledContainer = styled(motion.div)`
@@ -120,7 +119,6 @@ const StyledA = styled.a`
 
 const Contact = () => (
   <>
-    <Navbar />
     <Layout>
       <Seo title="Contact" />
       <StyledContainer
@@ -139,7 +137,7 @@ const Contact = () => (
               <FaEnvelope style={{ marginRight: "8px" }} />
               <StyledA href="mailto: clementjaymes@gmail.com">
                 {" "}
-                ******@*****.***{" "}
+                clementjaymes@gmail.com{" "}
               </StyledA>
             </p>
             <p>

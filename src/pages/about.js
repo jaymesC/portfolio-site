@@ -6,8 +6,6 @@ import { motion } from "framer-motion"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Navbar from "../components/Navbar"
-
 
 const StyledDiv = styled(motion.div)`
   margin-left: 6rem;
@@ -16,8 +14,7 @@ const StyledDiv = styled(motion.div)`
   @media screen and (max-width: 568px) {
     margin-left: 1rem;
     margin-right: 1rem;
-    flex-direction:column;
-    
+    flex-direction: column;
   }
 `
 
@@ -25,19 +22,17 @@ const StyledH1 = styled.h1`
   font-family: "Philosopher", sans-serif;
   margin-top: 2rem;
   font-size: 4rem;
-  
+
   @media screen and (max-width: 568px) {
     font-size: 2rem;
-
   }
 `
 const StyledImage = styled.section`
-  margin-top: 1.7rem;
-  margin-left: -3rem;
-  
+  margin-top: 1rem;
+  /* margin-left: -9rem; */
+
   @media screen and (max-width: 568px) {
     margin-left: 0.8rem;
-    
   }
 `
 const StyledButton = styled(motion.button)`
@@ -79,11 +74,8 @@ const buttonVariants = {
   },
 }
 
-
-
 const About = () => (
   <>
-    <Navbar />
     <Layout>
       <Seo title="About" />
       <StyledDiv
@@ -100,18 +92,18 @@ const About = () => (
           </p>
           <p>
             My passion for programming started in my high school days where I
-            took a deep dive into
-            <br /> web development. <br /> Building simple web pages and seeing
-            the results, I got this level of fulfilment after every build.{" "}
+            took a deep dive into web development. <br /> Building simple web
+            pages and seeing the results, I got this level of fulfilment after
+            every build.{" "}
             <span role="img" aria-labelledby="">
-              🔥
+              🔥🔥
             </span>{" "}
           </p>
           <p>
             Since then, I've gathered knowledge that has helped to propel my
             career. I am also a Christian.
-            <br /> I primarily program in JavaScript but have plans
-            to dive deeper to expand my skills.
+            <br /> I primarily program in JavaScript but have plans to dive
+            deeper to expand my skills.
           </p>
           <Link to="/project">
             <StyledButton variants={buttonVariants} whileHover="hover">
@@ -122,7 +114,7 @@ const About = () => (
         <StyledImage>
           <StaticImage
             layout="constrained"
-            src="../images/aboutpic.jpg"
+            src="../images/aboutpic.png"
             width={300}
             height={260}
             quality={95}

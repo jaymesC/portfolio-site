@@ -105,7 +105,8 @@ const SixthProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            A contact Manager application to help manage your contacts (Credit: Traversy Media)
+            A contact Manager application to help manage
+             your contacts (Credit: Traversy Media)
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -122,8 +123,7 @@ const SixthProjectItem = () => {
                     fontSize: "24px",
                   }}
                 />{" "}
-                <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
-                <FaCss3Alt style={{ marginRight: "5px", fontSize: "20px" }} />
+                <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />
                 <SiJavascript />
                 <FaBootstrap />
               </section>
@@ -155,4 +155,4 @@ const SixthProjectItem = () => {
   )
 }
 
-export default SixthProjectItem
+export default SixthProjectItem;
