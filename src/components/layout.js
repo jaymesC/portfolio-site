@@ -13,15 +13,6 @@ import Navbar from '../components/Navbar'
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   const StyledDiv = styled.div`
     margin-left: 4rem;

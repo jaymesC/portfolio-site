@@ -133,7 +133,11 @@ const FifthProjectItem = () => {
               </section>
             </StyledStack>
             <StyledLinks>
-              <a href="https://upscalesite.netlify.app/">
+              <a
+                href="https://upscalesite.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGlobe
                   style={{
                     marginRight: "12px",
@@ -142,7 +146,11 @@ const FifthProjectItem = () => {
                   }}
                 />
               </a>{" "}
-              <a href="https://github.com/jaymesC/upscale-advisory-site/tree/master">
+              <a
+                href="https://github.com/jaymesC/upscale-advisory-site/tree/master"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub
                   style={{
                     marginRight: "5px",

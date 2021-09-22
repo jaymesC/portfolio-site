@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
+import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5} from "react-icons/fa"
 import { SiJavascript } from "react-icons/si"
 
 const StyledDiv = styled.div`
@@ -125,7 +125,11 @@ const FourthProjectItem = () => {
               </section>
             </StyledStack>
             <StyledLinks>
-              <a href="https://www.mbarieservicesltd.com/">
+              <a
+                href="https://www.mbarieservicesltd.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGlobe
                   style={{
                     marginRight: "12px",
@@ -134,7 +138,11 @@ const FourthProjectItem = () => {
                   }}
                 />
               </a>{" "}
-              <a href="https://github.com/jaymesC/MSL-site">
+              <a
+                href="https://github.com/jaymesC/MSL-site"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub
                   style={{
                     marginRight: "5px",

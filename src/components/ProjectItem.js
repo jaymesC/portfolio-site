@@ -2,8 +2,8 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { motion } from "framer-motion"
-import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
-import { SiJava, SiJavascript, SiStyledComponents } from "react-icons/si"
+import { FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
+import { SiJavascript, SiStyledComponents } from "react-icons/si"
 
 const StyledDiv = styled(motion.div)`
   margin-top: 4rem;
@@ -141,7 +141,11 @@ const ProjectItem = () => {
               </section>
             </StyledStack>
             <StyledLinks>
-              <a href="https://jaymesjay.netlify.app/">
+              <a
+                href="https://jaymesjay.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGlobe
                   style={{
                     marginRight: "12px",
@@ -150,7 +154,11 @@ const ProjectItem = () => {
                   }}
                 />
               </a>{" "}
-              <a href="https://github.com/jaymesC/portfolio-site/tree/master">
+              <a
+                href="https://github.com/jaymesC/portfolio-site/tree/master"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub
                   style={{
                     marginRight: "5px",

@@ -3,10 +3,9 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { motion } from "framer-motion"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Navbar from "../components/Navbar"
+
 
 
 const StyledH1 = styled(motion.h1)`

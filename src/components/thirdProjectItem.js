@@ -108,7 +108,8 @@ const ThirdProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            A clone from the amazon website with login and backend functionality.
+            A clone from the amazon website with login and backend
+            functionality.
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -131,7 +132,11 @@ const ThirdProjectItem = () => {
               </section>
             </StyledStack>
             <StyledLinks>
-              <a href="https://clone-c5acd.web.app/">
+              <a
+                href="https://clone-c5acd.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGlobe
                   style={{
                     marginRight: "12px",
@@ -140,7 +145,11 @@ const ThirdProjectItem = () => {
                   }}
                 />
               </a>{" "}
-              <a href="https://github.com/jaymesC/amamzon-clone">
+              <a
+                href="https://github.com/jaymesC/amamzon-clone"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub
                   style={{
                     marginRight: "5px",

@@ -137,7 +137,7 @@ const SecondProjectItem = () => {
               </section>
             </StyledStack>
             <StyledLinks>
-              <a href="https://gastrown.com">
+              <a href="https://gastrown.com" target="_blank" rel="noreferrer">
                 <FaGlobe
                   style={{
                     marginRight: "12px",
@@ -146,7 +146,11 @@ const SecondProjectItem = () => {
                   }}
                 />
               </a>{" "}
-              <a href="https://github.com/jaymesC/gastrown-website/tree/master">
+              <a
+                href="https://github.com/jaymesC/gastrown-website/tree/master"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub
                   style={{
                     marginRight: "5px",
