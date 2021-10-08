@@ -39,7 +39,6 @@ const StyledContainer = styled.div`
 `
 
 const StyledButton = styled(motion.button)`
-  /* display: flex; */
   border: 2px solid #313131;
   background-color: #000;
   color: white;
@@ -47,11 +46,6 @@ const StyledButton = styled(motion.button)`
   border-radius: 5rem;
   margin-left: 9rem;
   padding: 12px 12px;
-  /* transition: 0.7s;
-  & :hover {
-    color: white;
-    background-color: red;
-  } */
 
   @media (max-width: 768px) {
     margin-left: 4rem;
