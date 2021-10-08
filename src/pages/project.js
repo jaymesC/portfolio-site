@@ -61,8 +61,8 @@ const SecondPage = () => (
         Here are some of my works
       </StyledDescription>
       <ProjectItem />
-      <SecondProjectItem />
       <ThirdProjectItem />
+      <SecondProjectItem />
       <FourthProjectItem />
       <FifthProjectItem />
       {/* <SixthProjectItem /> */}

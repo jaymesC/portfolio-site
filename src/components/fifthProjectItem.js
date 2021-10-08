@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { FaBootstrap, FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact, } from "react-icons/fa"
+import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact, } from "react-icons/fa"
 import { SiJavascript } from "react-icons/si"
 
 const StyledDiv = styled.div`
@@ -128,8 +128,9 @@ const FifthProjectItem = () => {
                 />{" "}
                 <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
                 <FaCss3Alt style={{ marginRight: "5px", fontSize: "20px" }} />
-                <FaBootstrap style={{ marginRight: "5px", fontSize: "20px" }} />
-                <SiJavascript />
+                <SiJavascript
+                  style={{ marginRight: "5px", fontSize: "20px" }}
+                />
               </section>
             </StyledStack>
             <StyledLinks>

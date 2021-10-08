@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { motion } from "framer-motion"
-import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5, FaReact } from "react-icons/fa"
+import { FaCss3Alt, FaGithub, FaGlobe, FaHtml5 } from "react-icons/fa"
 import { SiJavascript } from "react-icons/si"
 
 const StyledDiv = styled(motion.div)`
@@ -104,7 +104,7 @@ const SecondProjectItem = () => {
       <StyledSection>
         <StyledImage>
           <StaticImage
-            src="../images/mackbookNew.jpg"
+            src="../images/asphalt.jpg"
             width={300}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
@@ -113,8 +113,8 @@ const SecondProjectItem = () => {
         </StyledImage>
         <StyledNotes>
           <StyledP>
-            Gastrown offers product development of web service Information and
-            digital solutions for brands.
+            A company which are into Asphalt Production, Road Construction and
+            Maintenance.
           </StyledP>
           <StyledIcons>
             <StyledStack>
@@ -124,20 +124,17 @@ const SecondProjectItem = () => {
                 <p>Tech Stack:</p>{" "}
               </strong>{" "}
               <section>
-                <FaReact
-                  style={{
-                    marginLeft: "5px",
-                    marginRight: "5px",
-                    fontSize: "24px",
-                  }}
-                />{" "}
                 <FaHtml5 style={{ marginRight: "5px", fontSize: "20px" }} />{" "}
                 <FaCss3Alt style={{ marginRight: "5px", fontSize: "20px" }} />
                 <SiJavascript />
               </section>
             </StyledStack>
             <StyledLinks>
-              <a href="https://gastrown.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://asphaltandequipment.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGlobe
                   style={{
                     marginRight: "12px",
@@ -147,7 +144,7 @@ const SecondProjectItem = () => {
                 />
               </a>{" "}
               <a
-                href="https://github.com/jaymesC/gastrown-website/tree/master"
+                href="https://github.com/jaymesC/AEC/tree/master"
                 target="_blank"
                 rel="noreferrer"
               >
